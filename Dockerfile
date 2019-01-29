@@ -5,4 +5,5 @@ RUN nix-channel --update
 
 RUN nix-env -iA nixpkgs.bash
 RUN nix-env -iA nixpkgs.git
+RUN rm -rf /root/.cache/nix/*
 
