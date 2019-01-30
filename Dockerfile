@@ -9,4 +9,6 @@ RUN rm -rf /root/.cache/nix/*
 
 # FIXME: workaround for gitlab-runner using hardcoded path to shell
 RUN ln -s $(which bash) /bin/bash
+RUN rm -f /bin/sh
+RUN ln -s $(which sh) /bin/sh
 
